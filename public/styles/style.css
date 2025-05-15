@@ -1,0 +1,226 @@
+/* ----------- RESET CSS ----------- */
+/* Réinitialise le box-sizing et enlève les marges/paddings par défaut */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------- BODY & LAYOUT ----------- */
+/* Style général du body et mise en page principale */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+    min-height: 100vh;
+    color: #22223b;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ----------- HEADER ----------- */
+/* Style de l'en-tête du site */
+header {
+    background: #35424a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(53, 66, 74, 0.07);
+}
+
+/* ----------- NAVIGATION ----------- */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    background: #e8491d;
+    color: #fff;
+}
+
+/* ----------- CONTAINER ----------- */
+/* Conteneur principal pour centrer le contenu */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    flex: 1;
+}
+
+/* ----------- FOOTER ----------- */
+footer {
+    background: #35424a;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+    box-shadow: 0 -2px 8px rgba(53, 66, 74, 0.07);
+}
+
+/* ----------- PRODUCT CARD ----------- */
+/* Style des cartes produits */
+.product-card {
+    background: #fff;
+    border: 1px solid #e0e7ef;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(60, 72, 88, 0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+.product-card:hover {
+    box-shadow: 0 6px 24px rgba(60, 72, 88, 0.13);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* ----------- CART ----------- */
+/* Style du panier */
+.cart {
+    background: #fff;
+    border: 1px solid #e0e7ef;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(60, 72, 88, 0.07);
+}
+
+/* ----------- BUTTONS ----------- */
+/* Style des boutons principaux */
+.button,
+.btn-primary {
+    background: #6366f1;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.07);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.button:hover,
+.btn-primary:hover {
+    background: #4f46e5;
+}
+
+/* ----------- REGISTER / AUTH FORMS ----------- */
+/* Style des formulaires d'inscription et de connexion */
+.register-container,
+.auth-container {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 6px 32px rgba(60, 72, 88, 0.15);
+    max-width: 400px;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.register-form h2,
+.auth-form h2 {
+    margin-bottom: 1.5rem;
+    color: #3b3b3b;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background: #f9fafb;
+    transition: border 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #6366f1;
+    outline: none;
+}
+
+.login-link,
+.register-link {
+    margin-top: 1.2rem;
+    text-align: center;
+    font-size: 0.97rem;
+}
+
+.login-link a,
+.register-link a {
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: text-decoration 0.2s;
+}
+
+.login-link a:hover,
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* ----------- RESPONSIVE DESIGN ----------- */
+/* Adaptation du site pour les écrans moyens */
+@media (max-width: 900px) {
+    .container {
+        width: 98%;
+    }
+    .register-container,
+    .auth-container {
+        max-width: 98vw;
+    }
+}
+
+/* Adaptation du site pour les petits écrans */
+@media (max-width: 600px) {
+    header, footer {
+        padding: 10px 0;
+    }
+    .register-container,
+    .auth-container {
+        padding: 1.2rem 0.5rem;
+    }
+    .product-card,
+    .cart {
+        padding: 10px;
+    }
+}

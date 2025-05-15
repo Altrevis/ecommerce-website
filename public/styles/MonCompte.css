@@ -1,0 +1,69 @@
+.account-card {
+    background: #fff; /* Fond blanc */
+    border-radius: 16px; /* Bords arrondis */
+    box-shadow: 0 4px 24px rgba(60,72,88,0.13); /* Ombre portée douce */
+    padding: 2rem 2.5rem; /* Espacement interne */
+    max-width: 500px; /* Largeur maximale */
+    margin: 40px auto; /* Centrage vertical et horizontal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+#profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%; /* Rondeur */
+    object-fit: cover; /* Garde le ratio de l'image */
+    border: 3px solid #6366f1; /* Bord violet */
+    margin-bottom: 0.7rem;
+    background: #f3f4f6; /* Fond gris clair si pas d'image */
+}
+
+.user-info-section {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.user-info-section p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.edit-info-form {
+    width: 100%;
+}
+
+.edit-info-form h3 {
+    margin-bottom: 1rem;
+    color: #6366f1;
+    text-align: center;
+}
+
+.edit-info-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.edit-info-form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #555;
+}
+
+.edit-info-form input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background: #f9fafb;
+    margin-bottom: 0.2rem;
+}

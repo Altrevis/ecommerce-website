@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon compte</title>
+    <link rel="stylesheet" href="..//styles/style.css">
+    <link rel="stylesheet" href="../styles/MonCompte.css">
+</head>
+<body>
+    <header>
+        <h1>Mon compte</h1>
+        <nav>
+            <a href="Accueil.html">Accueil</a>
+            <a href="Panier.html">Panier</a>
+            <a href="Paiment.html">Paiement</a>
+            <a href="Inscription.html">Inscription</a>
+            <a href="Contact.html">Contact</a>
+            <a href="MonCompte.html">Compte</a>
+            <a href="CreerProduit.html">Créer</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="account-card">
+            <div class="profile-img-section">
+                <img id="profile-img" src="../images/default-profile.png" alt="Photo de profil">
+                <input type="file" id="profile-img-input" accept="image/*" style="display:none;">
+                <button id="change-img-btn" class="btn-primary">Changer la photo</button>
+            </div>
+            <div class="user-info-section" id="user-info">
+            </div>
+            <form id="edit-info-form" class="edit-info-form">
+                <h3>Compléter mes informations</h3>
+                <div class="form-group">
+                    <label for="user-name">Nom :</label>
+                    <input type="text" id="user-name" name="user-name" placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                    <label for="user-phone">Téléphone :</label>
+                    <input type="tel" id="user-phone" name="user-phone" placeholder="Votre numéro">
+                </div>
+                <div class="form-group">
+                    <label for="user-address">Adresse :</label>
+                    <input type="text" id="user-address" name="user-address" placeholder="Votre adresse">
+                </div>
+                <button type="submit" class="btn-primary">Enregistrer</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Votre E-commerce</p>
+    </footer>
+    <script src="../scripts/moncompte.js"></script>
+</body>
+</html>

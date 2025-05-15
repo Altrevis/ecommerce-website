@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link rel="stylesheet" href="..//styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Votre Panier</h1>
+        <nav>
+            <a href="Accueil.html">Accueil</a>
+            <a href="Panier.html">Panier</a>
+            <a href="Paiment.html">Paiement</a>
+            <a href="Inscription.html">Inscription</a>
+            <a href="Contact.html">Contact</a>
+            <a href="MonCompte.html">Compte</a>
+            <a href="CreerProduit.html">Créer</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="cart" id="cart-items">
+            <!-- Les articles du panier seront insérés ici dynamiquement -->
+        </div>
+        <div class="cart" id="cart-summary">
+            <h2>Résumé</h2>
+            <p>Total : <span id="total-price">0,00 €</span></p>
+            <button class="btn-primary" id="checkout-button">Passer au paiement</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Votre E-commerce</p>
+    </footer>
+    <script src="../scripts/panier.js"></script>
+</body>
+</html>

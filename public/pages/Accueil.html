@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="..//styles/style.css">
+    <style>
+        .product-card {
+            border: 1px solid #333;
+            margin: 10px 0;
+            padding: 10px;
+            background: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur notre E-commerce</h1>
+        <nav>
+            <a href="Accueil.html">Accueil</a>
+            <a href="Panier.html">Panier</a>
+            <a href="Paiment.html">Paiement</a>
+            <a href="Inscription.html">Inscription</a>
+            <a href="Contact.html">Contact</a>
+            <a href="MonCompte.html">Compte</a>
+            <a href="CreerProduit.html">Créer</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h2>Découvrez nos produits</h2>
+        <p>Parcourez notre sélection et profitez d'une expérience d'achat moderne.</p>
+        <div id="products-list">
+            <p class="product-creator">Créé par : <strong>${product.creator_name}</strong></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Votre E-commerce</p>
+    </footer>
+    <script src="../scripts/accueil.js"></script>
+</body>
+</html>
