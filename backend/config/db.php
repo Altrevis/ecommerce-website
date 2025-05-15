@@ -1,10 +1,10 @@
 <?php
 // Paramètres de connexion à la base de données
 $host = 'localhost';
-$db   = 'ecommerce_db';
-$user = 'leo'; // à remplacer par ton login MySQL
-$pass = 'leo'; // à remplacer par ton mot de passe MySQL
-$port = 3307; // à remplacer par le port de ton serveur MySQL
+$db   = 'xxx';
+$user = 'xxx'; // à remplacer par ton login MySQL
+$pass = 'xxx'; // à remplacer par ton mot de passe MySQL
+$port = 3306; // à remplacer par le port de ton serveur MySQL
 $charset = 'utf8mb4';
 
 // Construction du DSN (Data Source Name) pour PDO
